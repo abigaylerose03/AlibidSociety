@@ -1,75 +1,128 @@
 <!DOCTYPE html>
 <html>
-<title>Alibid Society</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Alibid Society</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel='shortcut icon' type='image/x-icon' href='logo.png' />
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-a:link {
-  text-decoration: none;
-}
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("mainImage.jpeg");
-  min-height: 100%;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-/* #042069 and #efbc4e are our chosen colors, as well as white and black. */
-#about h3:link {
-  text-decoration: none;
-}
+    <link rel='shortcut icon' type='image/x-icon' href='logo.png' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+ 
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-.w3-bar {
-  background-color: #042069;
-}
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
 
-.w3-bar .w3-button {
-  padding: 16px;
-  color: white;
-}
+    a:link {
+      text-decoration: none;
+    }
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: left center;
+      background-size: cover;
+      background-image: url("joinus.jpg");
+      min-height: 90%;
+    }
 
-.w3-bar-item {
-  padding: 2px;
-}
+    .about {
+      padding: 10rem;
+    }
 
-#about .w3-center:link {
-  text-decoration: none;
-}
+    /* #042069 and #efbc4e are our chosen colors, as well as white and black. */
+   /* #about h3:link {
+      text-decoration: none;
+    }
+*/
+    .w3-bar {
+      background-color: #042069;
+    }
 
-#work .w3-button {
-  margin-left: 650px;
-  background-color: #efbc4e;
+    .w3-bar .w3-button {
+      padding: 16px;
+      color: white;
+    }
 
-}
+    .w3-bar-item {
+      padding: 2px;
+    }
 
-#contact .w3-button {
-  background-color: #efbc4e;
-}
+    #about .w3-center:link {
+      text-decoration: none;
+    }
 
-footer {
-  background-color: #efbc4e;
-}
+    #work .w3-button {
+      margin-left: 650px;
+      background-color: #efbc4e;
 
-</style>
+    }
+
+    #contact .w3-button {
+      background-color: #efbc4e;
+    }
+
+    footer {
+      background-color: #efbc4e;
+    }
+
+    .w3-jumbo {
+      position: relative;
+      left: 500;
+    }
+
+    #home #bold {
+      font-weight: 900;
+      position: relative;
+      left: 500;
+    }
+
+
+    .about {
+      margin-left: 320px;
+      width: 50rem;
+      height: 130rem;
+
+    }
+
+    #bold-mission {
+      font-size: 2rem;
+      margin-top: 1rem;
+      font-weight: 900;
+      word-wrap: break-word;
+      color: #efbc4e;
+    }
+
+    #mission-desc {
+      padding-bottom: 8rem;
+      font-weight: 900;
+
+    }
+
+    .moveleft {
+      position: relative;
+      right: 17rem;
+    }
+
+    .gold {
+      color: #efbc4e;
+    }
+    
+    </style>
+  </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item"><img src="logo.png" width=50 height=50></a>
+    <a href="index.html" class="w3-bar-item"><img src="logo.png" width=50 height=50></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
@@ -95,9 +148,9 @@ footer {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Alibid Debate and Speech Society International</span><br>
+    <span id="bold" class="w3-jumbo w3-hide-small">Our Programs</span><br>
+     <p><a href="register.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a></p>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
-    <p><a href="about.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
 
@@ -106,94 +159,26 @@ footer {
 
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px;" id="about">
-  <h3 class="w3-center">We promote the art of debate and speeches internationally.</h3>
-  <p class="w3-center w3-medium"> Alibid Society is a non-profit organization run by high school students, focused on the promotion of debate and public speaking amongst youth grade one to twelve. Through our interactive programs, members are able to gain confidence and knowledge. In addition, we offer incredible internships and volunteering opportunities.</p>
+<div class="about w3-container" style="padding:128px 16px;" id="about">
+  <div class="card">
+    <h3 id="bold-mission"></h3>
+    <p class="w3-center w3-large" id="mission-desc">Check out our multitudes of programs designed with students in mind. Not only can you benefit knowledge wise, you can also obtain CAS and volunteer hours in some of our sessions.</p>
+  </div>
+
+  <img data-aos="fade-up" height=500 width=500 src="regularprogram.jpg" />
+  <h3 class="gold" data-aos="fade-up" >Regular Program</h3>
+  <p>Designed for students grade 6-12, this program promotes the art of debate and speeches through interactive workshops, lessons, and debate tournaments. It is completely free and no experience is required.</p>
+   <img data-aos="fade-up"  height=500 width=600 src="kidscamp.jpg" />
+   <h3 class="gold" data-aos="fade-up">Summer Program</h3>
+  <p>Designed for students grade 1-6, this speech summer camp is carefully designed to promote confidence. The entire course is 6 weeks long and packed with valuable information. It costs $30-45. No experience is required.</p>
+   <!-- <h3 data-aos="fade-up" data-aos-duration="1000" class="w3-center">Since May 2020, we have hosted an upward of twenty workshops, lessons, and tournaments. We have been supporting novice and experienced members alike in their speech and debate journey</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-star w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Leadership</p>
-      <p>We offer monthly internship opportunities such as tournament directors and organizers, periodic programs such as the summer speech program in which we recruit teachers and project managers, and much more</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-fire w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Resources</p>
-      <p>Explore Internship opportunities: tournament and program leadership opportunities Plentiful learning opportunities: workshops and lessons, mock debates, tournaments, practice speeches, speech contests.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-users w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Membership</p>
-      <p>Extensive resources: Worldwide keynote speakers
-      Plentiful learning opportunities: workshops and lessons, mock debates, tournaments, practice speeches, speech contests.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>This is a global community with people who wants to practice their public speaking in a safe, friendly, and motivating environment..</p>
-    </div>
-  </div>
+     <h3 class="moveleft"id="bold-mission">What People Say</h3>
+    <h3  data-aos="fade-up" class="w3-center w3-xxlarge">Alibid Society has provided me an amazing outlet to meet like-minded people and expand my debate skills.”</h3>
+    <h3 data-aos="fade-up">-Salma Zein, an Alibid Society Member</h3>
+  </div> -->
 </div>
 
-
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">40+</span>
-    <br>Members
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">4+</span>
-    <br>Countries
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">15+</span>
-    <br>Mentors
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">5+</span>
-    <br>Partners
-  </div>
-</div>
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">JOIN US</h3>
-  <p class="w3-center w3-large">Check out our selection of programmes and internship opportunities and sign up to become a member!</p>
-  <p><a href="#about" class="w3-button w3-padding-large w3-large">Join Us</a></p>
-
-
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-   
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button" type="submit">
-          <i class="fa fa-paper-heart"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  </div>
-</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-padding-64">
@@ -204,7 +189,8 @@ footer {
   <p>Calgary, Alberta, Canada   |   (403) 489-7273   |   inquiries@alibidsociety.com</p>
   <p>Made with <3 by Abigayle Peterson</p>
 </footer>
- 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -230,6 +216,12 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+// below listed default settings
+AOS.init({
+  duration: 1200,
+});
+
 </script>
 
 </body>

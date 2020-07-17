@@ -2,7 +2,7 @@
 <html>
 <title>Alibid Society</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,8 +49,11 @@ a:link {
   text-decoration: none;
 }
 
-#work .w3-button {
-  margin-left: 650px;
+#work #joinbtn {
+  text-align: center;
+  position: relative;
+  left: 7.5rem;
+
   background-color: #efbc4e;
 
 }
@@ -64,11 +67,11 @@ footer {
 }
 
 #about {
-    position: relative;
+  /*  position: relative;
     left: 190px;
     width: 70rem;
     bottom: 3rem;
-    height: 57rem;
+    height: 57rem;*/
 }
 .w3-medium {
   padding: 2rem;
@@ -175,7 +178,7 @@ footer {
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">JOIN US</h3>
   <p class="w3-center w3-large">Check out our selection of programmes and internship opportunities and sign up to become a member!</p>
-  <p><a href="#about" class="w3-button w3-center w3-padding-large w3-large">Join Us</a></p>
+  <p><a href="#about" id="joinbtn" class="w3-button w3-center w3-padding-large w3-large">Join Us</a></p>
 
 
 </div>

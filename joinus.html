@@ -30,11 +30,15 @@
       background-position: left center;
       background-size: cover;
       background-image: url("joinus.jpg");
-      min-height: 90%;
+      min-height: 80%;
     }
 
-    .about {
+    #about {
+      width: 100%;
+      margin: 0 auto;
       padding: 10rem;
+      overflow-x: hidden;
+    
     }
 
     /* #042069 and #efbc4e are our chosen colors, as well as white and black. */
@@ -85,13 +89,6 @@
     }
 
 
-    .about {
-      margin-left: 320px;
-      width: 50rem;
-      height: 200rem;
-
-    }
-
     #bold-mission {
       font-size: 2rem;
       margin-top: 1rem;
@@ -105,15 +102,32 @@
       padding-bottom: 3rem;
       font-weight: 900;
       position: relative;
-      right: 8rem;
       margin-bottom: 2px;
 
     }
+    @media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+      #about img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+      }
+      #home #bold {
+        font-size: 4rem;
+      }
+    }
 
+    @media only screen and (min-width: 768px) {
+        #home #bold {
+        font-size: 7rem;
+      }
+    }
+
+/*
     .moveleft {
       position: relative;
       right: 17rem;
-    }
+    }*/
 
     .gold {
       color: #efbc4e;
@@ -125,7 +139,7 @@
 
     #about {
       position: relative;
-      left: 10rem;
+   /*   left: 10rem;*/
     }
 
     #btnColor {
@@ -144,7 +158,7 @@
     <div class="w3-right w3-hide-small">
       <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
       <a href="joinus.html" class="w3-bar-item w3-button">JOIN US</a>
-      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+      <a href="index.html" class="w3-bar-item w3-button">CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -157,15 +171,15 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">JOIN US</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="joinus.html" onclick="w3_close()" class="w3-bar-item w3-button">JOIN US</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span id="bold" class="w3-jumbo w3-hide-small">Our Programs</span><br>
+    <span id="bold">Our Programs</span><br>
      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a></p>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
   </div> 

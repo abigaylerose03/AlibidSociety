@@ -50,10 +50,6 @@ a:link {
 }
 
 #work #joinbtn {
-  text-align: center;
-  position: relative;
-  left: 7.5rem;
-
   background-color: #efbc4e;
 
 }
@@ -81,6 +77,25 @@ footer {
 #bold {
   font-weight: 900;
 }
+
+@media only screen and (max-width: 768px) {
+     /* For mobile phones: */
+      #about img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+      }
+      #home #bold {
+        font-size: 2rem;
+      }
+    }
+
+     @media only screen and (min-width: 768px) {
+        #home #bold {
+        font-size: 7rem;
+      }
+    }
+    /* 
 
 </style>
 <body>
@@ -114,7 +129,7 @@ footer {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Alibid Debate and Speech Society International</span><br>
+    <span id="bold">Alibid Debate and Speech Society International</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
     <p><a href="about.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
   </div> 
@@ -178,7 +193,7 @@ footer {
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">JOIN US</h3>
   <p class="w3-center w3-large">Check out our selection of programmes and internship opportunities and sign up to become a member!</p>
-  <p><a href="#about" id="joinbtn" class="w3-button w3-center w3-padding-large w3-large">Join Us</a></p>
+  <p><a href="joinus.html" id="joinbtn" class="w3-button w3-center w3-padding-large w3-large">Join Us</a></p>
 
 
 </div>
